@@ -15,7 +15,7 @@ class PrintfulClient {
 
     this.headers = {
       "Content-Type": "application/json",
-      Authorization: `Basic ${Buffer.from(apiKey).toString("base64")}`,
+      Authorization: `Bearer ${Buffer.from(apiKey).toString("base64")}`,
       ...headers,
     };
   }
